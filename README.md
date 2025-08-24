@@ -1,4 +1,5 @@
 The Mental Health Awareness Website is an interactive web project made with HTML, CSS, and JavaScript. Its main goal is to raise awareness about mental health and offer helpful tips, supportive messages, and a way for users to reach out.
+
 ** Features:
 - Homepage (Hero Section)
 A motivational quote and a "Need Support?" button that displays an encouraging popup message.
