@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Awareness</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f9f9;
+      color: #333;
+    }
+    header {
+      background: #3b7a57;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero button {
+      background: #fff;
+      color: #3b7a57;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .hero button:hover {
+      background: #3b7a57;
+      color: white;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #eafaf1;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #3b7a57;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #2e5d44;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 Mental Health Awareness</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#awareness">Awareness</a>
+      <a href="#tips">Tips</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <h2>“Your mind matters.”</h2>
+    <p>Let’s break the stigma around mental health and support one another.</p>
+    <button onclick="showMessage()">Need Support?</button>
+  </section>
+  <section id="awareness">
+    <h2>Why Mental Health Matters</h2>
+    <p>Mental health affects how we think, feel, and act. Spreading awareness helps reduce stigma and encourage people to seek help without fear.</p>
+    <ul>
+      <li>🧠 Reduces stigma and shame</li>
+      <li>🤝 Encourages seeking support</li>
+      <li>❤️ Improves overall well-being</li>
+    </ul>
+  </section>
+  <section id="tips">
+    <h2>Simple Mental Health Tips</h2>
+    <div class="cards">
+      <div class="card">🌞 Get enough sunlight daily</div>
+      <div class="card">🏃 Exercise regularly</div>
+      <div class="card">💤 Maintain good sleep habits</div>
+      <div class="card">📖 Practice mindfulness & meditation</div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Mental Health Awareness Project | Stay Strong 💚</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("💚 You are not alone. It's okay to ask for help!");
+    }
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("✅ Your message has been sent. We’ll reach out soon!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
